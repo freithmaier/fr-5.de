@@ -13,6 +13,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import { Group } from "three";
 
 const invites = [
+  "sarah",
   "thesi",
   "adrian",
   "realL",
@@ -33,6 +34,9 @@ const invites = [
   "max",
   "wengler",
   "fabi",
+  "teresa",
+  "ane",
+  "leAndor",
 ];
 
 function capitalizeFirstLetter(val: string) {
@@ -88,9 +92,9 @@ function Beer() {
 }
 
 export default function App() {
-  // console.log(
-  //   invites.map((el) => `${el}: https://fr-5.de?n=${btoa(el)}`).join("\n")
-  // );
+  console.log(
+    invites.map((el) => `${el}: https://fr-5.de?n=${btoa(el)}`).join("\n")
+  );
 
   const [name, setName] = useState<string>("");
 
@@ -201,7 +205,7 @@ export default function App() {
               <Text
                 onClick={() =>
                   window.open(
-                    "https://wa.me/4915224825385?text=Na%20i%20kimm%20ned%20weil"
+                    "https://wa.me/4915224825385?text=Danke%20f%C3%BCr%20die%20Einladung,%0Ai%20kann%20oba%20ned%20kemma."
                   )
                 }
                 position={[-2, -63, 0]}
@@ -214,7 +218,7 @@ export default function App() {
               <Text
                 onClick={() =>
                   window.open(
-                    "https://wa.me/4915224825385?text=Fralle%20kimm%20i%20vorbei"
+                    "https://wa.me/4915224825385?text=Danke%20f%C3%BCr%20die%20Einladung,%0Anat%C3%BCrlich%20kimm%20i%20vorbei!"
                   )
                 }
                 position={[2, -63, 0]}
